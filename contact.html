@@ -108,6 +108,41 @@
     </div>
   </main>
 
+  <!-- Consultation Form Column -->
+      <div class="col-md-6">
+        <div class="p-4 bg-white rounded shadow-sm">
+          <h2 class="h4 fw-bold text-success-emphasis mb-4">Consultation Brief</h2>
+          <form>
+            <div class="mb-3">
+              <label for="clientName" class="form-label text-dark fw-semibold">Name</label>
+              <input type="text" class="form-control" id="clientName" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label for="clientEmail" class="form-label text-dark fw-semibold">Email address</label>
+              <input type="email" class="form-control" id="clientEmail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="inquiryType" class="form-label text-dark fw-semibold">Inquiry Type</label>
+              <select class="form-select" id="inquiryType">
+                <option selected>Select an option...</option>
+                <option value="1">Custom Arrangement Request</option>
+                <option value="2">Workshop Inquiry</option>
+                <option value="3">Event / Editorial Styling</option>
+                <option value="4">Corporate Account</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="messageText" class="form-label text-dark fw-semibold">Tell us about your space or event</label>
+              <textarea class="form-control" id="messageText" rows="4" placeholder="Share your event date, venue location, and your initial floral ideas here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100 fw-semibold shadow-sm">Submit Brief</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
   <!-- Global Footer -->
   <footer class="bg-white py-4 mt-auto border-top">
     <div class="container text-center">
