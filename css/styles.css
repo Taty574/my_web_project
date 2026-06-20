@@ -1,0 +1,197 @@
+:root {
+  --fb-green: #198754;
+  --fb-green-dark: #14532d;
+  --fb-cream: #fafaf8;
+  --fb-text-muted: #6c757d;
+  --fb-card-radius: 0.75rem;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: var(--fb-cream);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.letter-spacing-custom {
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-nav .nav-link {
+  transition: color 0.15s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--fb-green) !important;
+}
+
+#themeToggle {
+  cursor: pointer;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border-radius: var(--fb-card-radius);
+}
+.card:hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* ---------- Product / shop cards ---------- */
+.product-card img {
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--fb-card-radius) var(--fb-card-radius) 0 0;
+}
+
+.product-price {
+  color: var(--fb-green-dark);
+  font-weight: 600;
+}
+
+/* ---------- Filter buttons (Boutique page) ---------- */
+.filter-btn {
+  border: 1.5px solid var(--fb-green);
+  background: transparent;
+  color: var(--fb-green-dark);
+  border-radius: 2rem;
+  padding: 0.4rem 1.3rem;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: var(--fb-green);
+  color: #fff;
+}
+
+.product-card {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.product-card.fb-hidden {
+  display: none;
+}
+
+/* ---------- Gallery / carousel ---------- */
+.gallery-thumb {
+  cursor: pointer;
+  border-radius: var(--fb-card-radius);
+  overflow: hidden;
+  height: 220px;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-thumb:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------- Diary / blog cards ---------- */
+.blog-card .blog-meta {
+  font-size: 0.85rem;
+  color: var(--fb-text-muted);
+}
+
+/* ---------- FAQ accordion tweaks ---------- */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(25, 135, 84, 0.08);
+  color: var(--fb-green-dark);
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* ---------- Contact form validation ---------- */
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: var(--fb-green);
+}
+#formStatus.alert {
+  border-radius: var(--fb-card-radius);
+}
+
+/* ---------- Footer ---------- */
+footer a {
+  color: var(--fb-text-muted);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--fb-green);
+}
+
+/* ==========================================================================
+   DARK MODE — activated via [data-bs-theme="dark"] on <html>, toggled by
+   js/main.js. Bootstrap 5.3 handles most component theming automatically;
+   these rules cover our custom classes.
+   ========================================================================== */
+[data-bs-theme="dark"] {
+  --fb-cream: #1a1d1a;
+}
+
+[data-bs-theme="dark"] body {
+  background-color: var(--fb-cream);
+}
+
+[data-bs-theme="dark"] .navbar,
+[data-bs-theme="dark"] header.sticky-top,
+[data-bs-theme="dark"] footer {
+  background-color: #212521 !important;
+  border-color: #343a34 !important;
+}
+
+[data-bs-theme="dark"] .card,
+[data-bs-theme="dark"] .bg-white {
+  background-color: #242824 !important;
+  color: #e8e8e3;
+}
+
+[data-bs-theme="dark"] .text-dark,
+[data-bs-theme="dark"] .text-dark-emphasis {
+  color: #e8e8e3 !important;
+}
+
+[data-bs-theme="dark"] .text-muted,
+[data-bs-theme="dark"] .lead.text-muted,
+[data-bs-theme="dark"] .card-text.text-muted {
+  color: #a8aca5 !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+  background-color: #20231f !important;
+}
+
+[data-bs-theme="dark"] .border-top,
+[data-bs-theme="dark"] .border-light,
+[data-bs-theme="dark"] hr {
+  border-color: #343a34 !important;
+}
+
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select {
+  background-color: #2b2f2b;
+  border-color: #3d423d;
+  color: #e8e8e3;
+}
+[data-bs-theme="dark"] .form-control::placeholder {
+  color: #7d827b;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 767.98px) {
+  .display-5 {
+    font-size: 2.1rem;
+  }
+}
