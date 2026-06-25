@@ -195,3 +195,17 @@ footer a:hover {
     font-size: 2.1rem;
   }
 }
+/* ---------- Home hero image ---------- */
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+/* ---------- Home featured collection card images ---------- */
+.collection-img-side {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
