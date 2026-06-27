@@ -228,4 +228,9 @@ footer a:hover {
   height: 260px;
   object-fit: cover;
 }
- 
+ /* ---------- Diary page post card images ---------- */
+.blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
