@@ -105,42 +105,48 @@
           </div>
         </div>
       </div>
-    </div>
-  </main>
 
   <!-- Consultation Form Column -->
       <div class="col-md-6">
         <div class="p-4 bg-white rounded shadow-sm">
           <h2 class="h4 fw-bold text-success-emphasis mb-4">Consultation Brief</h2>
-          <form>
+          <form id="consultationForm" novalidate>
             <div class="mb-3">
               <label for="clientName" class="form-label text-dark fw-semibold">Name</label>
-              <input type="text" class="form-control" id="clientName" placeholder="Your name">
+              <input type="text" class="form-control" id="clientName" placeholder="Your name" required>
+              <div class="invalid-feedback">Please provide your name.</div>
             </div>
             <div class="mb-3">
               <label for="clientEmail" class="form-label text-dark fw-semibold">Email address</label>
-              <input type="email" class="form-control" id="clientEmail" placeholder="name@example.com">
+              <input type="email" class="form-control" id="clientEmail" placeholder="name@example.com" required>
+              <div class="invalid-feedback">Please provide a valid email address.</div>
             </div>
             <div class="mb-3">
               <label for="inquiryType" class="form-label text-dark fw-semibold">Inquiry Type</label>
-              <select class="form-select" id="inquiryType">
-                <option selected>Select an option...</option>
+              <select class="form-select" id="inquiryType" required>
+                <option value="" selected disabled>Select an option...</option>
                 <option value="1">Custom Arrangement Request</option>
                 <option value="2">Workshop Inquiry</option>
                 <option value="3">Event / Editorial Styling</option>
                 <option value="4">Corporate Account</option>
               </select>
+              <div class="invalid-feedback">Please select an inquiry type.</div>
             </div>
             <div class="mb-4">
               <label for="messageText" class="form-label text-dark fw-semibold">Tell us about your space or event</label>
-              <textarea class="form-control" id="messageText" rows="4" placeholder="Share your event date, venue location, and your initial floral ideas here..."></textarea>
+              <textarea class="form-control" id="messageText" rows="4" placeholder="Share your event date, venue location, and your initial floral ideas here..." required></textarea>
+              <div class="invalid-feedback">Please describe your space or event.</div>
             </div>
             <button type="submit" class="btn btn-success w-100 fw-semibold shadow-sm">Submit Brief</button>
+            
+            <div id="formStatus" class="alert mt-3 d-none"role="alert"></div>
+
           </form>
         </div>
       </div>
 
     </div>
+    
   </main>
 
   <!-- Global Footer -->
@@ -152,5 +158,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
