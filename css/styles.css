@@ -252,4 +252,13 @@ footer a:hover {
   height: 220px;
   object-fit: cover;
 }
+/* ---------- Auth tabs ---------- */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--fb-green) !important;
+  color: #fff !important;
+}
+.nav-pills .nav-link:not(.active) {
+  color: var(--fb-green-dark) !important;
+}
  

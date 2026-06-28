@@ -87,24 +87,77 @@
     <!-- Contact Info & Form Grid -->
     <div class="row g-5 justify-content-center">
       
-      <!-- Studio Details Column -->
+    <!-- Studio Details Column -->
       <div class="col-md-5">
         <div class="p-4 bg-white rounded shadow-sm h-100">
           <h2 class="h4 fw-bold text-success-emphasis mb-4">Studio Details</h2>
-          
-          <div class="mb-4">
-            <h3 class="h6 fw-bold text-dark text-uppercase mb-1">Address</h3>
-            <p class="text-muted">402 Petal Lane,<br>Artisan District</p>
-          </div>
+      
+    <!-- Studio Hours -->
+    <div class="mb-4">
+      <h3 class="h6 fw-bold text-dark text-uppercase mb-1">Studio Hours</h3>
+      <p class="text-muted mb-0">Tuesday – Saturday: 9:00 AM – 5:00 PM</p>
+      <p class="text-muted">Sunday: 10:00 AM – 2:00 PM</p>
+      <span class="badge bg-danger-subtle text-danger-emphasis px-2 py-1 rounded">Closed Mondays for farm sourcing</span>
+    </div>
 
-          <div class="mb-4">
-            <h3 class="h6 fw-bold text-dark text-uppercase mb-1">Studio Hours</h3>
-            <p class="text-muted mb-0">Tuesday – Saturday: 9:00 AM – 5:00 PM</p>
-            <p class="text-muted">Sunday: 10:00 AM – 2:00 PM</p>
-            <span class="badge bg-danger-subtle text-danger-emphasis px-2 py-1 rounded">Closed Mondays for farm sourcing</span>
-          </div>
-        </div>
-      </div>
+    <hr class="opacity-25 mb-4">
+
+    <!-- Nairobi Office -->
+    <div class="mb-4">
+      <h3 class="h6 fw-bold text-dark text-uppercase mb-2">Our Nairobi Office</h3>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Address:</span> 402 Petal Lane, Artisan District, Nairobi
+      </p>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Email:</span>
+        <a href="mailto:nairobi@floralboutique.com" class="text-success text-decoration-none">nairobi@floralboutique.com</a>
+      </p>
+      <p class="text-muted mb-0">
+        <span class="fw-semibold text-dark">Phone:</span>
+        <a href="tel:+254711000001" class="text-success text-decoration-none">+254 711 000 001</a>
+      </p>
+    </div>
+
+    <hr class="opacity-25 mb-4">
+
+    <!-- Mombasa Office -->
+    <div class="mb-4">
+      <h3 class="h6 fw-bold text-dark text-uppercase mb-2">Our Mombasa Office</h3>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Address:</span> 18 Bahari Road, Old Town, Mombasa
+      </p>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Email:</span>
+        <a href="mailto:mombasa@floralboutique.com" class="text-success text-decoration-none">mombasa@floralboutique.com</a>
+      </p>
+      <p class="text-muted mb-0">
+        <span class="fw-semibold text-dark">Phone:</span>
+        <a href="tel:+254711000002" class="text-success text-decoration-none">+254 711 000 002</a>
+      </p>
+    </div>
+
+    <hr class="opacity-25 mb-4">
+
+    <!-- Kisumu Office -->
+    <div class="mb-4">
+      <h3 class="h6 fw-bold text-dark text-uppercase mb-2">Our Kisumu Office</h3>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Address:</span> 7 Lakeview Avenue, Milimani, Kisumu
+      </p>
+      <p class="text-muted mb-1">
+        <span class="fw-semibold text-dark">Email:</span>
+        <a href="mailto:kisumu@floralboutique.com" class="text-success text-decoration-none">kisumu@floralboutique.com</a>
+      </p>
+      <p class="text-muted mb-0">
+        <span class="fw-semibold text-dark">Phone:</span>
+        <a href="tel:+254711000003" class="text-success text-decoration-none">+254 711 000 003</a>
+      </p>
+    </div>
+
+  </div>
+</div> 
+          
+      
 
   <!-- Consultation Form Column -->
       <div class="col-md-6">
@@ -146,6 +199,98 @@
       </div>
 
     </div>
+
+    <!-- Auth Section -->
+<hr class="my-5 opacity-25">
+
+<section class="row justify-content-center mb-5">
+  <div class="col-md-6">
+
+    <p class="text-center text-uppercase fw-semibold small letter-spacing-custom mb-3" style="color: var(--fb-text-muted);">Your Account</p>
+
+    <div class="p-4 bg-white rounded shadow-sm">
+
+      <!-- Tab Nav -->
+      <ul class="nav nav-pills nav-fill mb-4 bg-light p-1 rounded" id="authTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active fw-semibold" id="signin-tab"
+            data-bs-toggle="pill" data-bs-target="#signinPanel"
+            type="button" role="tab"
+            aria-controls="signinPanel" aria-selected="true">
+            Sign In
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fw-semibold" id="signup-tab"
+            data-bs-toggle="pill" data-bs-target="#signupPanel"
+            type="button" role="tab"
+            aria-controls="signupPanel" aria-selected="false">
+            Create Account
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="authTabsContent">
+
+        <!-- Sign In Panel -->
+        <div class="tab-pane fade show active" id="signinPanel" role="tabpanel" aria-labelledby="signin-tab">
+          <div class="mb-3">
+            <label for="siEmail" class="form-label text-dark fw-semibold">Email address</label>
+            <input type="email" class="form-control" id="siEmail" placeholder="name@example.com">
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+          <div class="mb-2">
+            <label for="siPassword" class="form-label text-dark fw-semibold">Password</label>
+            <input type="password" class="form-control" id="siPassword" placeholder="Your password">
+            <div class="invalid-feedback">Please provide a valid password.</div>
+          </div>
+          <div class="text-end mb-4">
+            <a href="#" class="text-success small fw-semibold text-decoration-none">Forgot password?</a>
+          </div>
+          <button type="button" class="btn btn-success w-100 fw-semibold shadow-sm">Sign In</button>
+          <p class="text-center small mt-3 mb-0" style="color: var(--fb-text-muted);">
+            No account yet?
+            <a href="#" class="text-success fw-semibold text-decoration-none"
+              onclick="document.getElementById('signup-tab').click(); return false;">Create one</a>
+          </p>
+        </div>
+
+        <!-- Sign Up Panel -->
+        <div class="tab-pane fade" id="signupPanel" role="tabpanel" aria-labelledby="signup-tab">
+          <div class="row g-3 mb-3">
+            <div class="col">
+              <label for="suFirst" class="form-label text-dark fw-semibold">First name</label>
+              <input type="text" class="form-control" id="suFirst" placeholder="Rose">
+              <div class="invalid-feedback">Please provide your first name.</div>
+            </div>
+            <div class="col">
+              <label for="suLast" class="form-label text-dark fw-semibold">Last name</label>
+              <input type="text" class="form-control" id="suLast" placeholder="Bloom">
+              <div class="invalid-feedback">Please provide your last name.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="suEmail" class="form-label text-dark fw-semibold">Email address</label>
+            <input type="email" class="form-control" id="suEmail" placeholder="name@example.com">
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+          <div class="mb-4">
+            <label for="suPassword" class="form-label text-dark fw-semibold">Password</label>
+            <input type="password" class="form-control" id="suPassword" placeholder="At least 8 characters">
+            <div class="invalid-feedback">Password must be at least 8 characters long.</div>
+          </div>
+          <button type="button" class="btn btn-success w-100 fw-semibold shadow-sm">Create Account</button>
+          <p class="text-center small mt-3 mb-0" style="color: var(--fb-text-muted);">
+            Already have an account?
+            <a href="#" class="text-success fw-semibold text-decoration-none"
+              onclick="document.getElementById('signin-tab').click(); return false;">Sign in</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
     
   </main>
 
