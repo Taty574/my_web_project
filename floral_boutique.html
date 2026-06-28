@@ -87,6 +87,7 @@
         <button class="filter-btn" data-filter="wild">Wild &amp; Garden</button>
         <button class="filter-btn" data-filter="event">Event &amp; Editorial</button>
         <button class="filter-btn" data-filter="subscription">Subscription</button>
+        <button class="filter-btn" data-filter="sympathy">Sympathy</button>
     </div>
  
     <hr class="my-5 opacity-25">
@@ -182,8 +183,32 @@
             </div>
           </div>
         </div>
-
+      
+      <div class="col-md-6 col-lg-4 product-card" data-category="sympathy">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/white-lily.jpg" alt="White Lily Tribute arrangement in a low ceramic bowl" class="boutique-img" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title fw-bold text-dark">White Lily Tribute</h3>
+              <p class="card-text text-muted">A quiet, low arrangement of white lilies and soft greenery, delivered same-day for memorial services.</p>
+              <p class="product-price mb-0">KSh 4,800</p>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 product-card" data-category="sympathy">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/standing-wreath.jpg" alt="Standing sympathy wreath with white and green florals" class="boutique-img" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title fw-bold text-dark">Standing Sympathy Wreath</h3>
+              <p class="card-text text-muted">A traditional standing wreath in white and soft green, suitable for services and processions.</p>
+              <p class="product-price mb-0">KSh 9,500</p>
+            </div>
+          </div>
+        </div>
+ 
       </div>
+ 
+      <p id="noResults" class="text-center text-muted mt-5 d-none">No bouquets match this filter right now — check back soon or browse "All".</p>
     </section>
  
     <!-- Workshop Lineup Section -->
@@ -234,5 +259,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/boutique.js"></script>
 </body>
 </html>
